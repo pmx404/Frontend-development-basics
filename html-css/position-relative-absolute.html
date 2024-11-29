@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position-relative-absolute-basics</title>
+  </head>
+  <body style="height: 3000px">
+    <!-- for position fixed ---- elements are placed in the browser window ie while scrolling header and sidebar remains in place 
+         for position absolute ---- elements are placed on the page ie while scrolling down the page the element moves according to the page scroll
+         for position relative ---- elements are placed w.r.t to the div where they are defined example: refer div-1  -->
+
+    <div
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 70px;
+        background-color: yellow;
+        z-index: 100;
+      "
+    >
+      header
+    </div>
+
+    <div
+      style="
+        background-color: pink;
+        height: 300px;
+        width: 300px;
+        margin-left: 300px;
+        margin-top: 300px;
+        position: relative;
+      "
+    >
+      div-1
+
+      <div
+        style="
+          background-color: red;
+          color: white;
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+        "
+      >
+        relative to this div-1 10:20
+      </div>
+    </div>
+
+    <div
+      style="
+        background-color: aqua;
+        position: fixed;
+        top: 70px;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+      "
+    >
+      side-bar
+
+      <div
+        style="
+          background-color: red;
+          color: white;
+          position: absolute;
+          top: 0;
+          right: 0;
+        "
+      >
+        X
+      </div>
+    </div>
+
+    <div
+      style="
+        background-color: red;
+        color: white;
+        position: absolute;
+        top: 100px;
+        left: 120px;
+      "
+    >
+      absolute
+    </div>
+
+  
+    </div>
+  </body>
+</html>

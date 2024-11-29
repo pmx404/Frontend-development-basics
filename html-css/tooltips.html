@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>toolTip</title>
+    <style>
+      .div-1 {
+        margin-left: 100px;
+        margin-top: 100px;
+        height: 300px;
+        width: 300px;
+        background-color: rgb(145, 224, 196);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      img {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        cursor: pointer;
+        background-color: azure;
+        border-radius: 50px;
+      }
+
+      img:hover + .toolTip {
+        visibility: visible;
+      }
+
+      .notification-count {
+        position: absolute;
+        top: 105px;
+        right: 80px;
+
+        margin-right: 25px;
+
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+
+        border-radius: 30px;
+
+        background-color: rgb(218, 34, 34);
+        color: white;
+
+        font-size: 45px;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+      }
+
+      .toolTip {
+        background-color: rgb(179, 177, 177);
+        color: white;
+        position: absolute;
+        bottom: 70px;
+        right: 50px;
+        padding: 5px;
+        border-radius: 2px;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body style="height: 3000px; font-family: Roboto, Arial">
+    <div class="div-1">
+      <img src="/images/notifications.svg" alt="bell" />
+      <div class="toolTip">Notifications</div>
+      <div class="notification-count">3</div>
+    </div>
+  </body>
+</html>
