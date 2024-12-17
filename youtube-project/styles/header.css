@@ -3,6 +3,10 @@
   height: 55px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .left-section {
@@ -12,8 +16,8 @@
 }
 
 .hamburger-menu {
-  height: 30px;
-  width: 30px;
+  height: 24px;
+  width: 24px;
   margin-left: 20px;
   cursor: pointer;
 }
@@ -57,6 +61,10 @@
   margin-left: -1px;
   margin-right: 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .search-icon {
@@ -75,6 +83,10 @@
   border: none;
   background-color: rgb(245, 245, 245);
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .voice-icon {
@@ -134,4 +146,11 @@
   width: 32px;
   margin-right: 25px;
   cursor: pointer;
+}
+
+.upload-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
